@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex w-full mx-auto absolute  justify-center -bottom-24">
         </div>
       </div>
-        <div className="flex absolute w-full bottom-28  justify-around">
+        <div className="flex  w-full   justify-center">
         <ButtonCall text="Solicitar información"  />
         <ButtonCall text="Ver Demo"  />
         </div>
