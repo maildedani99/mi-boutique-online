@@ -17,6 +17,7 @@ export default function Home() {
       </div>
         <div className="flex  w-full   justify-center">
         <ButtonCall text="Solicitar información"  />
+        <div className="w-8"></div>
         <ButtonCall text="Ver Demo"  />
         </div>
     </div>

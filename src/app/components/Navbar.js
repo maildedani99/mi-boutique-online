@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="flex w-full bg-transparent text-black justify-between mt-10  ">
+    <div className="flex w-full bg-transparent text-black justify-between mt-6   ">
       <Image 
             src="/logo_boutique.png"
             alt="Picture of the author"
