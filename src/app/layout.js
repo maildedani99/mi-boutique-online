@@ -14,8 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${montserrat.className}   antialiased `}>
-      <div className="flex w-10/12 mx-auto max-w-[1400px] ">
+      <body className={`${inter.className} ${montserrat.className}   antialiased 	 `}>
+      <div className="flex w-10/12 mx-auto max-w-[1400px]">
         {children}
 
       </div>
