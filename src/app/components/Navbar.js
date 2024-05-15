@@ -10,29 +10,25 @@ export default function Navbar() {
             width={300}
             height={300}
           />
-      <ul className="flex list-none m-0 p-0 w-[50%] justify-between">
+      <ul className="flex list-none m-0 p-0 w-[50%] justify-around text-[#517A93] font-semibold">
         <li className="mr-6">
-          <Link href="/" className=" hover:text-gray-300">
+          <Link href="/" className=" hover:text-[#0B3857]">
             Inicio
           </Link>
         </li>
         <li className="mr-6">
-          <Link href="/about" className=" hover:text-gray-300">
+          <Link href="/about" className=" hover:text-[#0B3857]">
             Nosotros
           </Link>
         </li>
         <li className="mr-6">
-          <Link href="/services" className=" hover:text-gray-300">
+          <Link href="/services" className=" hover:text-[#0B3857]">
             Servicios
           </Link>
         </li>
+       
         <li className="mr-6">
-          <Link href="/blog" className=" hover:text-gray-300">
-            Blog
-          </Link>
-        </li>
-        <li className="mr-6">
-          <Link href="/contact" className=" hover:text-gray-300">
+          <Link href="/contact" className=" hover:text-[#0B3857]">
             Contacto
           </Link>
         </li>

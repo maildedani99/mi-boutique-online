@@ -15,7 +15,14 @@ export default function Home() {
         <div className="flex w-full mx-auto absolute  justify-center -bottom-24">
         </div>
       </div>
-        <div className="flex  w-full   justify-center">
+      <div className="flex w-full justify-center align-middle -mt-48 z-10">
+        <div className="bg-gray-100 bg-opacity-90 p-6 rounded-lg shadow-lg">
+          <h1 className="font-semibold text-black text-4xl text-center">
+            El ecommerce para tu negocio de moda
+          </h1>
+        </div>
+      </div>
+        <div className="flex  w-full   justify-center z-10 mt-28">
         <ButtonCall text="Solicitar información"  />
         <div className="w-8"></div>
         <ButtonCall text="Ver Demo"  />
