@@ -1,38 +1,67 @@
+"use client"
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex w-full bg-transparent text-black justify-between mt-6   ">
-      <Image 
-            src="/logo_boutique.png"
-            alt="Picture of the author"
-            width={300}
-            height={300}
+    <div
+      className={`fixed w-10/12 max-w-[1400px]  transition-all duration-300 z-50 ${
+        isScrolled ? "bg-gradient-to-r from-white to-[#E2E3DE]  py-2" : "bg-transparent py-2"
+      }`}
+    >
+      <div className="container mx-auto flex justify-between ">
+        <div className={`transition-all   duration-300 ${isScrolled ? 'w-[125px]  ' : 'w-[350px]  p-8'}`}>
+          <Image
+            src="/logo_billion_4.png"
+            alt="Logo"
+            width={200} // Asigna un ancho fijo
+            height={200} // Asigna una altura fija
+            className="" // Asegura que la imagen se ajuste correctamente dentro del contenedor
           />
-      <ul className="flex list-none m-0 p-0 w-[50%] justify-around text-primary font-semibold">
-        <li className="mr-6">
-          <Link href="/" className=" hover:text-secondary">
-            Inicio
-          </Link>
-        </li>
-        <li className="mr-6">
-          <a href="#nosotros" className=" hover:text-secondary">
-            Nosotros
-          </a>
-        </li>
-        <li className="mr-6">
-          <Link href="/services" className=" hover:text-secondary">
-            Servicios
-          </Link>
-        </li>
-       
-        <li className="mr-6">
-          <Link href="/contact" className=" hover:text-secondary">
-            Contacto
-          </Link>
-        </li>
-      </ul>
+        </div>
+        <ul className="flex list-none  mt-4 p-0 w-[50%] justify-around text-primary font-semibold">
+          <li className="mr-6">
+            <Link href="/" className="hover:text-secondary">
+              Inicio
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link href="#nosotros" className="hover:text-secondary">
+              Nosotros
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link href="/#services" className="hover:text-secondary">
+              Servicios
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link href="/#contact" className="hover:text-secondary">
+              Contacto
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

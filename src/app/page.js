@@ -2,10 +2,13 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import ButtonCall from "./components/ButtonCall";
 import AboutAs from "./components/AboutAs";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col bg-gradient-to-r from-white to-[#E2E3DE] h-screen">
+    <div className="flex w-full flex-col bg-gradient-to-r from-[#FDFDFD] to-[#E2E3DE] ">
       <div
         className="relative w-full bg-[url('/moda.png')] bg-cover bg-center"
         style={{ paddingTop: "56.25%" }}
@@ -20,7 +23,7 @@ export default function Home() {
               El eCommerce para tu negocio de moda
             </h1>
             <div className="flex  w-10/12 mx-auto   justify-center z-10 mt-10">
-              <ButtonCall text="Solicitar información" />
+              <ButtonCall text="Solicitar información" link="#contact"/>
               <div className="w-20"></div>
               <ButtonCall text="Ver Demo" />
             </div>
@@ -28,6 +31,9 @@ export default function Home() {
         </div>
       </div>
       <AboutAs />
+      <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 }
