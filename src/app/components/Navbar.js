@@ -28,7 +28,7 @@ export default function Navbar() {
       className={`fixed w-full max-w-[1400px]  transition-all duration-300 z-50 ${isScrolled ? "bg-gradient-to-r from-white to-[#E2E3DE]  py-2" : "bg-transparent xl:py-2"
       }`}
     >
-      <div className=" mx-auto flex justify-between ">
+      <div className="w-full mx-auto flex justify-between ">
         <div className={`hidden sm:flex transition-all   duration-300 ${isScrolled ? 'w-[125px]  ' : 'w-[100px] p-3 sm:w-[150px] md:w-[250px] lg:w-[350px]  md:p-10'}`}>
           <Image
             src="/logo_billion_4.png"
@@ -38,7 +38,7 @@ export default function Navbar() {
             className="" // Asegura que la imagen se ajuste correctamente dentro del contenedor
           />
         </div>
-        <ul className="flex list-none  mt-6  px-2 md:p-0 w-[50%] justify-around text-primary font-semibold">
+        <ul className="flex w-full list-none  mt-6  px-2 md:p-0 md:w-[50%] justify-around text-primary font-semibold">
           <li className="mr-6">
             <Link href="/" className="hover:text-secondary">
               Inicio
