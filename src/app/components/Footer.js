@@ -21,20 +21,33 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex mx-auto w-4/12  items-center justify-around space-y-4 md:space-y-0 md:space-x-4">
-            <Link href="/#aboutUs" className="text-gray-400 hover:text-white">
-              Nosotros
-            </Link>
-            <Link href="/#services" className="text-gray-400 hover:text-white">
-              Servicios
-            </Link>
-            <Link href="/#contact" className="text-gray-400 hover:text-white">
-              Contacto
-            </Link>
-            <Link href="/#contact" className="text-gray-400 hover:text-white">
-              Demo
-            </Link>
+          <div className="flex flex-col w-4/12">
+            <div className="flex mx-auto  w-full items-center justify-around space-y-4 md:space-y-0 md:space-x-4">
+              <Link href="/#aboutUs" className="text-gray-400 hover:text-white">
+                Nosotros
+              </Link>
+              <Link
+                href="/#services"
+                className="text-gray-400 hover:text-white"
+              >
+                Servicios
+              </Link>
+              <Link href="/#contact" className="text-gray-400 hover:text-white">
+                Contacto
+              </Link>
+              <Link href="/#contact" className="text-gray-400 hover:text-white">
+                Demo
+              </Link>
+            </div>
+            <Image
+              src="/logo_billion_white_3.png"
+              alt="Logo"
+              width={150} // Asigna un ancho fijo
+              height={150} // Asigna una altura fija
+              className="mx-auto my-auto" // Asegura que la imagen se ajuste correctamente dentro del contenedor
+            />
           </div>
+
           <div className="flex flex-col w-4/12 items-center space-x-4 ">
             <h3 className="text-xl  font-semibold">Puedes encontrarnos aqui</h3>
             <div className="text-left mt-4 space-y-2 text-gray-400">
@@ -81,13 +94,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <Image
-            src="/logo_billion_white_3.png"
-            alt="Logo"
-            width={150} // Asigna un ancho fijo
-            height={150} // Asigna una altura fija
-            className="mx-auto p-4" // Asegura que la imagen se ajuste correctamente dentro del contenedor
-          />
+
         <div className="flex mb-6 md:mb-0 text-center mx-auto">
           <h2 className="text-lg font-normal my-auto">Mi Boutique Online</h2>
           <p className="text-gray-400 my-auto ml-4">

@@ -6,6 +6,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '', // Añadido campo de teléfono
     message: '',
   });
 
@@ -34,6 +35,7 @@ export default function Contact() {
         setFormData({
           name: '',
           email: '',
+          phone: '', // Resetear campo de teléfono
           message: '',
         });
       } else {
@@ -82,10 +84,24 @@ export default function Contact() {
               />
             </div>
             <div className="mb-4">
+              <label htmlFor="phone" className="block text-text font-semibold mb-2">Teléfono</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+              />
+            </div>
+            <div className="mb-4">
               <label htmlFor="message" className="block text-text font-semibold mb-2">Mensaje</label>
               <textarea
                 id="message"
                 name="message"
+                defaultValue="Deseo información sobre el e-Commerce de moda de Mi Boutique Online"
+                placeholder="Deseo información sobre el e-Commerce de moda de Mi Boutique Online"
                 value={formData.message}
                 onChange={handleChange}
                 required
