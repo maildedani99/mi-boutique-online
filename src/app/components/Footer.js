@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from '../../../public/logo_white.svg'
 import { FaPhone, FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -39,12 +40,13 @@ export default function Footer() {
                 Demo
               </Link>
             </div>
+            <div className="fle flex-1"></div>
             <Image
-              src="/logo_billion_white_3.png"
-              alt="Logo"
+              src={Logo}
+              alt="Logo de la empresa"
               width={150} // Asigna un ancho fijo
               height={150} // Asigna una altura fija
-              className="mx-auto my-auto" // Asegura que la imagen se ajuste correctamente dentro del contenedor
+              className="mx-auto " // Asegura que la imagen se ajuste correctamente dentro del contenedor
             />
           </div>
 
@@ -97,8 +99,8 @@ export default function Footer() {
 
         <div className="flex flex-col mb-6 md:mb-0 text-center mx-auto">
           <Image
-            src="/logo_billion_white_3.png"
-            alt="Logo"
+            src={Logo}
+            alt="Logo de la empresa"
             width={150} // Asigna un ancho fijo
             height={150} // Asigna una altura fija
             className="mx-auto my-auto flex md:hidden" // Asegura que la imagen se ajuste correctamente dentro del contenedor

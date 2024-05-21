@@ -5,6 +5,7 @@ import AboutAs from "./components/AboutAs";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import logo from "../../public/logo_black.svg"
 
 export default function Home() {
   return (
@@ -35,8 +36,8 @@ export default function Home() {
         </div>
       </div>
       <Image
-            src="/logo_billion_4.png"
-            alt="Logo"
+            src={logo}
+            alt="Logo de la empresa"
             width={150} // Asigna un ancho fijo
             height={200} // Asigna una altura fija
             className="mx-auto mt-4 sm:hidden block" // Asegura que la imagen se ajuste correctamente dentro del contenedor

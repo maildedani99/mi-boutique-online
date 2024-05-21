@@ -96,17 +96,16 @@ export default function Contact() {
               />
             </div>
             <div className="mb-4">
-  <label htmlFor="message" className="block text-text font-semibold mb-2">Mensaje</label>
-  <textarea
-    id="message"
-    name="message"
-    value={formData.message}
-    onChange={handleChange}
-    required
-    className="w-full h-40 px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
-  />
-</div>
-
+              <label htmlFor="message" className="block text-text font-semibold mb-2">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full h-40 px-4 py-2 border border-gray-300 rounded-lg shadow-sm"
+              />
+            </div>
             <button type="submit" className="w-full bg-[#517A93] text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-[#405a6b]">Enviar</button>
           </form>
         )}

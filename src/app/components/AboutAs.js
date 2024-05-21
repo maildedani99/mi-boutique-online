@@ -19,13 +19,13 @@ export default function AboutAs() {
                     <h3 className="text-2xl font-semibold text-[#517A93] mt-8 mb-4">Nuestra Misión</h3>
                     <p>Nuestra misión es empoderar a los emprendedores y pequeños negocios de moda con una plataforma de ecommerce que les permita competir en igualdad de condiciones con los grandes minoristas. Creemos que cada negocio, sin importar su tamaño, merece tener acceso a herramientas profesionales que faciliten su crecimiento y éxito en el mundo digital.</p>
 
-                    <h3 className="text-2xl font-semibold text-[#517A93] mt-8 mb-4">Valores Fundamentales</h3>
+                    {/* <h3 className="text-2xl font-semibold text-[#517A93] mt-8 mb-4">Valores Fundamentales</h3>
                     <ul className="list-disc pl-5">
                         <li><strong>Innovación:</strong> Nos esforzamos por estar siempre a la vanguardia de la tecnología, ofreciendo soluciones innovadoras que se adapten a las necesidades cambiantes del mercado.</li>
                         <li><strong>Calidad:</strong> Nos comprometemos a mantener altos estándares de calidad en todo lo que hacemos, desde el desarrollo de la plataforma hasta el soporte al cliente.</li>
                         <li><strong>Colaboración:</strong> Creemos en el poder de la colaboración, tanto dentro de nuestro equipo como con nuestros clientes. Trabajamos juntos para lograr los mejores resultados posibles.</li>
                         <li><strong>Pasión:</strong> Amamos lo que hacemos y eso se refleja en cada aspecto de nuestro trabajo. Nuestra pasión por la moda y la tecnología nos impulsa a seguir mejorando y creciendo.</li>
-                    </ul>
+                    </ul> */}
 
                     <h3 className="text-2xl font-semibold text-[#517A93] mt-8 mb-4">Únete a Nosotros</h3>
                     <p>Estamos emocionados de ser parte de tu viaje empresarial. Únete a nuestra comunidad de emprendedores y descubre cómo Mi Boutique Online puede ayudarte a transformar tu negocio de moda. Juntos, podemos hacer grandes cosas.</p>
