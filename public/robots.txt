@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://miboutiqueonline.es
+
+# Sitemaps
+Sitemap: https://miboutiqueonline.es/sitemap.xml

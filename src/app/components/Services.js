@@ -1,4 +1,6 @@
+import { CldImage } from "next-cloudinary";
 import Image from "next/image";
+import ClientImage from "./ClientImage";
 
 export default function Services () {
   return (
@@ -11,23 +13,23 @@ export default function Services () {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="service-item">
-            <Image 
-              src="/pantallazo-verde.png" 
-              alt="Diseño Personalizado" 
+            <ClientImage 
+              src="/mi-boutique-online/demo_1_tn3nok" 
+              alt="foto demo eCommerce" 
               width={500} 
               height={300} 
               className="w-full h-auto rounded-lg shadow-lg" 
             />
-            <h3 className="text-2xl font-semibold text-[#517A93] mt-4 mb-2">Diseño Personalizado</h3>
+            <h3 className="text-2xl font-semibold text-[#517A93] mt-4 mb-2">Diseño Adaptado</h3>
             <p className="text-text">
-              Te ofrecemos diseños personalizados que reflejan la identidad de tu marca y atraen a tus clientes.
+              Te ofrecemos diseños adaptados que reflejan la identidad de tu marca y atraen a tus clientes.
             </p>
           </div>
           
           <div className="service-item">
-            <Image 
-              src="/pago.png" 
-              alt="Integración de Pagos" 
+          <ClientImage 
+              src="/mi-boutique-online/pagos_gvw8i7" 
+              alt="foto demo eCommerce" 
               width={500} 
               height={300} 
               className="w-full h-auto rounded-lg shadow-lg" 
@@ -39,9 +41,9 @@ export default function Services () {
           </div>
           
           <div className="service-item">
-            <Image 
-              src="/pantallazo_dash.png" 
-              alt="Gestión de Inventario" 
+          <ClientImage 
+              src="/mi-boutique-online/sotck_jlhu7l" 
+              alt="foto demo eCommerce" 
               width={500} 
               height={300} 
               className="w-full h-auto rounded-lg shadow-lg" 
@@ -53,9 +55,9 @@ export default function Services () {
           </div>
           
           <div className="service-item">
-            <Image 
-              src="/pantallazo-analisis.png" 
-              alt="Análisis y Reportes" 
+          <ClientImage 
+              src="/mi-boutique-online/estadisticas_cftbvg" 
+              alt="foto demo dashboard" 
               width={500} 
               height={300} 
               className="w-full h-auto rounded-lg shadow-lg" 

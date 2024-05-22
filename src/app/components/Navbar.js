@@ -29,18 +29,17 @@ export default function Navbar() {
       }`}
     >
       <div className="w-full mx-auto flex justify-between ">
-        <div className={`hidden sm:flex transition-all   duration-300 ${isScrolled ? 'w-[125px]  ' : 'w-[100px] p-3 sm:w-[150px] md:w-[250px] lg:w-[350px]  md:p-10'}`}>
+        <div className={`hidden sm:flex transition-all   duration-300 ${isScrolled ? 'w-[125px]   ' : 'w-[100px] p-3 sm:w-[150px] md:w-[250px] lg:w-[350px]  md:p-10'}`}>
           <Image
-            src="/logo_black.png"
+            src="/logo_black.svg"
             alt="Logo"
-            width={200} // Asigna un ancho fijo
-            height={200} // Asigna una altura fija
-            className="" // Asegura que la imagen se ajuste correctamente dentro del contenedor
+            width={200}
+            height={200}
           />
         </div>
         <ul className="flex w-full list-none  mt-6  px-2 md:p-0 md:w-[50%] justify-around text-primary font-semibold">
           <li className="mr-6">
-            <Link href="/" className="hover:text-secondary">
+            <Link href="#inicio" className="hover:text-secondary">
               Inicio
             </Link>
           </li>
