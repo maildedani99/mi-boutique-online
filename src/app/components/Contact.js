@@ -22,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:3001/send-email', {
+      const res = await fetch('https://be-mi-boutique.vercel.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ export default function Contact() {
           </form>
         )}
 
-        {error && <p className="text-center text-red-500 mt-4">{error}</p>}
+        {error && !submitted && <p className="text-center text-red-500 mt-4">{error}</p>}
       </div>
     </section>
   );
