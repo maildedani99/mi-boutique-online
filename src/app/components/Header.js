@@ -29,7 +29,7 @@ export default function Header() {
                 </div>
             </div>
             <Image
-                src={logo}
+                src="logo_black.svg"
                 alt="Logo de la empresa"
                 width={150} // Asigna un ancho fijo
                 height={200} // Asigna una altura fija
