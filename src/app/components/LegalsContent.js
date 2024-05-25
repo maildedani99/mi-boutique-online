@@ -1,5 +1,5 @@
 
-export default function Legals () {
+export default function LegalsContent () {
 
 return (
     <section className="py-12">

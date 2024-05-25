@@ -38,7 +38,7 @@ export default function Navbar() {
           />
         </div>
         <ul className="flex w-full list-none  mt-6  px-2 md:p-0 md:w-[50%] justify-around text-primary font-semibold">
-          <li className="mr-6">
+          <li className="mr-6 hidden sm:flex">
             <Link href="#inicio" className="hover:text-secondary">
               Inicio
             </Link>

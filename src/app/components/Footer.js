@@ -14,10 +14,10 @@ export default function Footer() {
           <div className="flex flex-col w-full md:w-4/12  ">
             <h3 className="text-xl font-semibold mx-auto">Información legal</h3>
             <div className="flex flex-col mx-auto text-gray-400 text-md text-left mt-4">
-              <Link className="mx-auto " href="/terms">
+              <Link className="mx-auto " href="/conditions">
                 - Términos y condiciones
               </Link>
-              <Link className="mx-auto mt-2" href="/legals">
+              <Link className="mx-auto mt-2" href="/privacity">
                 - Aviso Legal y Privacidad
               </Link>
             </div>
