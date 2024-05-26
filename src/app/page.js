@@ -4,7 +4,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MetaTags from "./components/MetaTags";
-import Link from "next/link";
 
 export default function Home() {
   return (

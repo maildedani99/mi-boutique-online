@@ -9,7 +9,7 @@ return (
       <div className="text-lg text-text leading-relaxed mb-8">
         <h3 className="text-2xl font-semibold mb-4">1. Información General</h3>
         <p className="mb-4">
-          De acuerdo con el Artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, te informamos que este sitio web es propiedad de Mi Boutique Online, con dirección en [Dirección de la Empresa] y correo electrónico <a href="mailto:info@miboutiqueonline.es" className="text-[#517A93] hover:underline">info@miboutiqueonline.es</a>.
+          De acuerdo con el Artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, te informamos que este sitio web es propiedad de Mi Boutique Online, con dirección en Barcelona y correo electrónico <a href="mailto:info@miboutiqueonline.es" className="text-[#517A93] hover:underline">info@miboutiqueonline.es</a>.
         </p>
         
         <h3 className="text-2xl font-semibold mb-4">2. Protección de Datos</h3>

@@ -1,14 +1,11 @@
 "use client"
 import { MdClose } from 'react-icons/md';
 import { useRouter } from 'next/navigation'
-import Link from 'next/link';
-
 
 
 export default function CloseModalIcon () {
 
     const router = useRouter()
-
 
     return (
         <div onClick={() => {router.back()}}>

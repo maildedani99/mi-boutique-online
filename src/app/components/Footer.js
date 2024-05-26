@@ -44,9 +44,9 @@ export default function Footer() {
             <Image
               src={Logo}
               alt="Logo de la empresa"
-              width={150} // Asigna un ancho fijo
-              height={150} // Asigna una altura fija
-              className="mx-auto " // Asegura que la imagen se ajuste correctamente dentro del contenedor
+              width={150}
+              height={150}
+              className="mx-auto"
             />
           </div>
 
@@ -101,9 +101,9 @@ export default function Footer() {
           <Image
             src={Logo}
             alt="Logo de la empresa"
-            width={150} // Asigna un ancho fijo
-            height={150} // Asigna una altura fija
-            className="mx-auto my-auto flex md:hidden" // Asegura que la imagen se ajuste correctamente dentro del contenedor
+            width={150} 
+            height={150}
+            className="mx-auto my-auto flex md:hidden"
           />
           <div className="flex flex-col md:flex-row py-6">
             <h2 className="text-lg font-normal my-auto">Mi Boutique Online</h2>

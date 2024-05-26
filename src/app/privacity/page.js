@@ -1,12 +1,12 @@
 import CloseButton from "../components/CloseButton";
+import LegalsContent from "../components/LegalsContent";
 import Modal from "../components/Modal";
-import TermsContent from "../components/TermsContent";
 
 
 export default function Privacity () {
     return (
         <Modal>
-            <TermsContent />
+            <LegalsContent />
             <CloseButton />
         </Modal>
     )

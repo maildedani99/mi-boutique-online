@@ -18,7 +18,7 @@ const MetaTags = ({ title, description, keywords, image }) => (
 MetaTags.defaultProps = {
   title: 'Mi Boutique Online',
   description: 'Tu tienda online de moda con las últimas tendencias.',
-  keywords: 'moda, boutique, tienda online, ropa',
+  keywords: 'moda, boutique, tienda online, ropa, ecommerce',
   image: 'https://miboutiqueonline.es/og-image.jpg',
 };
 

@@ -17,7 +17,6 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -25,7 +24,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed w-full max-w-[1400px]  transition-all duration-300 z-50 ${isScrolled ? "bg-gradient-to-r from-white to-[#E2E3DE]  py-2" : "bg-transparent xl:py-2"
+      className={`fixed w-full max-w-[1400px]  transition-all duration-300 z-50 ${isScrolled ? "bg-gradient-to-r from-white to-[#E2E3DE] border-b-[#B9BCB9]  py-2" : "bg-transparent xl:py-2"
       }`}
     >
       <div className="w-full mx-auto flex justify-between ">

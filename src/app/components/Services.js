@@ -1,5 +1,3 @@
-import { CldImage } from "next-cloudinary";
-import Image from "next/image";
 import ClientImage from "./ClientImage";
 
 export default function Services () {
